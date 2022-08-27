@@ -1,0 +1,6 @@
+framework module Pods_Qasimah {
+  umbrella header "Pods-Qasimah-umbrella.h"
+
+  export *
+  module * { export * }
+}
