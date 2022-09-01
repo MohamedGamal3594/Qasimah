@@ -1,16 +1,20 @@
 PODS:
   - ACFloatingTextfield-Swift (1.8)
+  - SideMenuSwift (2.0.9)
 
 DEPENDENCIES:
   - ACFloatingTextfield-Swift (~> 1.8)
+  - SideMenuSwift
 
 SPEC REPOS:
   trunk:
     - ACFloatingTextfield-Swift
+    - SideMenuSwift
 
 SPEC CHECKSUMS:
   ACFloatingTextfield-Swift: c3212cef9548ae58fa914ea1c26a2f9a4f7cd7df
+  SideMenuSwift: 39f1922e225da4aaa8b16591037a929defe960c9
 
-PODFILE CHECKSUM: 96d5971f713b5372539f3dd4eb2d0dc8c7f97b87
+PODFILE CHECKSUM: 24d03ee3b965819d4849677e11bca93d17ade144
 
 COCOAPODS: 1.11.3

@@ -24,7 +24,6 @@ class LoginController: UIViewController {
             button.layer.borderWidth = 1
             button.layer.borderColor = UIColor.lightGray.cgColor
         }
-        skipButton.addTarget(self, action: #selector(goToHome), for: .touchUpInside)
             emailText.placeholder = "البريد الالكتروني"
             passwordText.placeholder = "كلمة المرور"
             

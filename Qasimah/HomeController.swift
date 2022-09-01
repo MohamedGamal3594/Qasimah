@@ -6,14 +6,17 @@
 //
 
 import UIKit
+import SideMenuSwift
 
 class HomeController: UIViewController ,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UITableViewDelegate,UITableViewDataSource{
 
     @IBOutlet weak var couponsTable: UITableView!
     @IBOutlet weak var catogreyCollection: UICollectionView!
     @IBOutlet weak var searchText: UITextField!
+    @IBOutlet weak var sideMenuButton: UIButton!
+    @IBOutlet weak var downViewButton: UIButton!
     let searchButton = UIButton(type: .system)
-    let catogreyNames:[String] = ["الكل","عطور","اكسسوارات","السفر","مطاعم"]
+    var catogreyNames:[String] = ["الكل","عطور","اكسسوارات","السفر","مطاعم"]
     var selectedIndex: NSInteger = -1
     var favourites = [NSInteger]()
     var copiedCodes = [NSInteger]()
@@ -21,18 +24,21 @@ class HomeController: UIViewController ,UICollectionViewDelegate,UICollectionVie
         super.viewDidLoad()
         searchText.layer.borderWidth = 1
         searchText.layer.borderColor = UIColor.black.cgColor
+        searchText.layer.cornerRadius = 2
         searchButton.setImage(UIImage(systemName: "magnifyingglass"), for: .normal)
         searchButton.tintColor = UIColor.black
         searchText.rightView = searchButton
         searchText.rightViewMode = .always
         searchText.attributedPlaceholder = NSAttributedString(string: "ابحث هنا", attributes: [NSAttributedString.Key.foregroundColor: UIColor.black])
+        catogreyNames.reverse()
         catogreyCollection.delegate = self
         catogreyCollection.dataSource = self
         couponsTable.delegate = self
         couponsTable.dataSource = self
-        catogreyCollection.transform = CGAffineTransform(scaleX: -1.0, y: 1.0)
         
-    
+        sideMenuButton.addTarget(self, action: #selector(openSideMenu), for: .touchUpInside)
+        downViewButton.addTarget(self, action: #selector(openDownView), for: .touchUpInside)
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -43,7 +49,6 @@ class HomeController: UIViewController ,UICollectionViewDelegate,UICollectionVie
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CollectionViewCell
         cell.cellbutton.setTitle(catogreyNames[indexPath.row], for: .normal)
         cell.cellbutton.addTarget(self, action: #selector(selectedButton), for: .touchUpInside)
-        cell.transform = CGAffineTransform(scaleX: -1.0, y: 1.0)
         return cell
     }
     
@@ -66,7 +71,7 @@ class HomeController: UIViewController ,UICollectionViewDelegate,UICollectionVie
     // Make the background color show through
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let headerView = UIView()
-        headerView.backgroundColor = UIColor(red: 223/255, green: 225/255, blue: 225/255, alpha: 1)
+        headerView.backgroundColor = UIColor.clear
         return headerView
     }
     
@@ -134,7 +139,7 @@ class HomeController: UIViewController ,UICollectionViewDelegate,UICollectionVie
             
             cell.cellbutton.setTitleColor(UIColor.black, for: .normal)
             
-            cell.cellbutton.tintColor = UIColor.init(red: 223/255, green: 225/255, blue: 225/255, alpha: 1)
+            cell.cellbutton.tintColor = UIColor.init(red: 237/255, green: 238/255, blue: 243/255, alpha: 1)
         }
         sender.setTitleColor(UIColor.init(red: 255/255, green: 211/255, blue: 106/255, alpha: 1), for: .normal)
         sender.tintColor = UIColor.init(red: 47/255, green: 178/255, blue: 162/255, alpha: 1)
@@ -171,6 +176,18 @@ class HomeController: UIViewController ,UICollectionViewDelegate,UICollectionVie
             sender.contentHorizontalAlignment = .center
             copiedCodes.append(sender.tag)
         }
+    }
+    
+    @objc func openSideMenu(_ sender: UIButton){
+        sideMenuController?.revealMenu()
+    }
+    
+    @objc func openDownView(_ sender: UIButton){
+        let downView = storyboard?.instantiateViewController(withIdentifier: "resultsView") as! ResultsController
+        if let sheet = downView.sheetPresentationController{
+            sheet.detents = [.medium()]
+        }
+        present(downView, animated: true, completion: nil)
     }
 
 }

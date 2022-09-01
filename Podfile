@@ -6,6 +6,7 @@ target 'Qasimah' do
   use_frameworks!
 
   pod 'ACFloatingTextfield-Swift', '~> 1.8'
+  pod 'SideMenuSwift'
   # Pods for Qasimah
 
 end

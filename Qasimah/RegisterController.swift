@@ -24,7 +24,6 @@ class RegisterController: UIViewController {
             button.layer.borderWidth = 1
             button.layer.borderColor = UIColor.lightGray.cgColor
            }
-        skipButton.addTarget(self, action: #selector(goToHome), for: .touchUpInside)
             nametext.placeholder = "الاسم بالكامل"
             emailtext.placeholder = "البريد الالكتروني"
             passwordtext.placeholder = "كلمة المرور"
@@ -56,14 +55,5 @@ class RegisterController: UIViewController {
     
 }
 
-extension UIViewController{
-    
-    @objc func goToHome(_ sender: UIButton){
         
-        let homeView = storyboard?.instantiateViewController(withIdentifier: "homeView") as! HomeController
-        homeView.modalPresentationStyle = .fullScreen
-        present(homeView, animated: true)
-    }
-    
-    
-}
+

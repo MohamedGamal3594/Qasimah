@@ -12,4 +12,3 @@ class CollectionViewCell: UICollectionViewCell {
     @IBOutlet public weak var cellbutton: UIButton!
     
 }
-

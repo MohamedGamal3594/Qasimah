@@ -8,7 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		143BBA272879103400E6CA35 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143BBA262879103400E6CA35 /* HomeController.swift */; };
+		143C3DEC28BFF53700167459 /* ResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143C3DEB28BFF53700167459 /* ResultsController.swift */; };
+		143C3DF028C03DB700167459 /* classCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143C3DEF28C03DB700167459 /* classCell.swift */; };
+		143C3DF228C0407900167459 /* orderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143C3DF128C0407900167459 /* orderCell.swift */; };
 		1457FD29289C508A000C4903 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1457FD28289C508A000C4903 /* TableViewCell.swift */; };
+		14687BF028BB17B300D2EA8C /* sideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14687BEF28BB17B300D2EA8C /* sideMenuController.swift */; };
+		14687BF228BB24F100D2EA8C /* settingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14687BF128BB24F100D2EA8C /* settingCell.swift */; };
 		1470EC3B28764695003B0252 /* eyeSecureButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1470EC3A28764695003B0252 /* eyeSecureButton.swift */; };
 		149A7AE5286BE29500CFC28D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149A7AE4286BE29500CFC28D /* AppDelegate.swift */; };
 		149A7AE7286BE29500CFC28D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 149A7AE6286BE29500CFC28D /* SceneDelegate.swift */; };
@@ -25,8 +30,13 @@
 
 /* Begin PBXFileReference section */
 		143BBA262879103400E6CA35 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		143C3DEB28BFF53700167459 /* ResultsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsController.swift; sourceTree = "<group>"; };
+		143C3DEF28C03DB700167459 /* classCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = classCell.swift; sourceTree = "<group>"; };
+		143C3DF128C0407900167459 /* orderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = orderCell.swift; sourceTree = "<group>"; };
 		14424BCC82601F09D9935296 /* Pods_Qasimah.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Qasimah.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1457FD28289C508A000C4903 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		14687BEF28BB17B300D2EA8C /* sideMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sideMenuController.swift; sourceTree = "<group>"; };
+		14687BF128BB24F100D2EA8C /* settingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingCell.swift; sourceTree = "<group>"; };
 		1470EC3A28764695003B0252 /* eyeSecureButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eyeSecureButton.swift; sourceTree = "<group>"; };
 		149A7AE1286BE29500CFC28D /* Qasimah.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qasimah.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		149A7AE4286BE29500CFC28D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,9 +92,14 @@
 				149A7AE8286BE29500CFC28D /* FirstController.swift */,
 				14E4B4B12870F13D00E5E8D5 /* RegisterController.swift */,
 				149A7AEA286BE29500CFC28D /* Main.storyboard */,
+				143C3DEB28BFF53700167459 /* ResultsController.swift */,
+				14687BEF28BB17B300D2EA8C /* sideMenuController.swift */,
 				1457FD28289C508A000C4903 /* TableViewCell.swift */,
+				14687BF128BB24F100D2EA8C /* settingCell.swift */,
 				143BBA262879103400E6CA35 /* HomeController.swift */,
 				14AB2E46288E116F0067F876 /* CollectionViewCell.swift */,
+				143C3DEF28C03DB700167459 /* classCell.swift */,
+				143C3DF128C0407900167459 /* orderCell.swift */,
 				14E4B4AF2870F0CF00E5E8D5 /* LanguageController.swift */,
 				149A7AED286BE29B00CFC28D /* Assets.xcassets */,
 				149A7AEF286BE29B00CFC28D /* LaunchScreen.storyboard */,
@@ -229,13 +244,18 @@
 			files = (
 				14E4B4B22870F13D00E5E8D5 /* RegisterController.swift in Sources */,
 				14E4B4B42870F15F00E5E8D5 /* LoginController.swift in Sources */,
+				143C3DF028C03DB700167459 /* classCell.swift in Sources */,
+				14687BF028BB17B300D2EA8C /* sideMenuController.swift in Sources */,
 				14AB2E47288E116F0067F876 /* CollectionViewCell.swift in Sources */,
 				149A7AE9286BE29500CFC28D /* FirstController.swift in Sources */,
 				149A7AE5286BE29500CFC28D /* AppDelegate.swift in Sources */,
+				14687BF228BB24F100D2EA8C /* settingCell.swift in Sources */,
 				1457FD29289C508A000C4903 /* TableViewCell.swift in Sources */,
 				143BBA272879103400E6CA35 /* HomeController.swift in Sources */,
+				143C3DF228C0407900167459 /* orderCell.swift in Sources */,
 				149A7AE7286BE29500CFC28D /* SceneDelegate.swift in Sources */,
 				14E4B4B02870F0CF00E5E8D5 /* LanguageController.swift in Sources */,
+				143C3DEC28BFF53700167459 /* ResultsController.swift in Sources */,
 				1470EC3B28764695003B0252 /* eyeSecureButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
