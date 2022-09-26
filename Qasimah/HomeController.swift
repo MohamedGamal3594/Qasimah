@@ -9,7 +9,7 @@ import UIKit
 import SideMenuSwift
 
 class HomeController: UIViewController ,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UITableViewDelegate,UITableViewDataSource{
-
+    
     @IBOutlet weak var couponsTable: UITableView!
     @IBOutlet weak var catogreyCollection: UICollectionView!
     @IBOutlet weak var searchText: UITextField!
@@ -20,8 +20,10 @@ class HomeController: UIViewController ,UICollectionViewDelegate,UICollectionVie
     var selectedIndex: NSInteger = -1
     var favourites = [NSInteger]()
     var copiedCodes = [NSInteger]()
+        
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         searchText.layer.borderWidth = 1
         searchText.layer.borderColor = UIColor.black.cgColor
         searchText.layer.cornerRadius = 2
@@ -190,4 +192,26 @@ class HomeController: UIViewController ,UICollectionViewDelegate,UICollectionVie
         present(downView, animated: true, completion: nil)
     }
 
+}
+
+extension UIViewController{
+    @objc func backToHome(_ sender: UIButton){
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    func setUpView(_ sender:UIButton){
+        let swipe = UISwipeGestureRecognizer(target: self, action: #selector(self.sideGesture(gesture:)))
+        swipe.direction = .left
+        self.view.addGestureRecognizer(swipe)
+        
+        navigationController?.interactivePopGestureRecognizer?.isEnabled = true
+        
+        sender.addTarget(self, action: #selector(backToHome), for: .touchUpInside)
+    }
+    
+    @objc func sideGesture(gesture: UISwipeGestureRecognizer){
+        if gesture.direction == .left{
+            sideMenuController?.revealMenu()
+        }
+    }
 }

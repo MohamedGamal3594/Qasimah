@@ -32,3 +32,24 @@ class TableViewCell: UITableViewCell {
     }
 }
 
+class bestTableCell: UITableViewCell{
+    @IBOutlet weak var productImage: UIImageView!
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
+    
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+    }
+    
+    override func layoutSubviews() {
+        self.layer.cornerRadius = 8
+        self.layer.borderColor = UIColor.darkGray.cgColor
+        self.layer.borderWidth = 1
+        
+        productImage.layer.cornerRadius = productImage.frame.height / 2
+        productImage.layer.borderColor = UIColor.darkGray.cgColor
+        productImage.layer.borderWidth = 1
+    }
+    
+}

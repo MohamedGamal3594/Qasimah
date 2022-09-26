@@ -14,7 +14,7 @@ class RegisterController: UIViewController {
     @IBOutlet weak var passwordtext: ACFloatingTextfield!
     @IBOutlet weak var faceButton: UIButton!
     @IBOutlet weak var googleButton: UIButton!
-    @IBOutlet weak var skipButton: UIButton!
+    var activeTextField: UITextField? = nil
     let eyebutton = eyeSecureButton()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,19 +41,11 @@ class RegisterController: UIViewController {
         passwordtext.leftViewMode = .always
         
     }
-    
-    @IBAction func loginButtonClick(_ sender: Any) {
-           let loginView = storyboard?.instantiateViewController(withIdentifier: "loginView") as! LoginController
-
-        loginView.modalPresentationStyle = .fullScreen
-        present(loginView, animated: true)
-    }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         view.endEditing(true)
     }
     
 }
-
         
 

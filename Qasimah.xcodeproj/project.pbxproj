@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14072FF628C18C4500B847F1 /* ChangePasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14072FF528C18C4500B847F1 /* ChangePasswordController.swift */; };
+		141ADD2428C17E7000519E0E /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 141ADD2328C17E7000519E0E /* ProfileController.swift */; };
+		1437E04128C2A8730021C4F3 /* BestOffersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1437E04028C2A8730021C4F3 /* BestOffersController.swift */; };
+		1437E04328C2DA810021C4F3 /* HelpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1437E04228C2DA810021C4F3 /* HelpController.swift */; };
+		1437E04528C2DB1B0021C4F3 /* AddCouponController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1437E04428C2DB1B0021C4F3 /* AddCouponController.swift */; };
 		143BBA272879103400E6CA35 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143BBA262879103400E6CA35 /* HomeController.swift */; };
 		143C3DEC28BFF53700167459 /* ResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143C3DEB28BFF53700167459 /* ResultsController.swift */; };
 		143C3DF028C03DB700167459 /* classCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143C3DEF28C03DB700167459 /* classCell.swift */; };
@@ -29,6 +34,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14072FF528C18C4500B847F1 /* ChangePasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordController.swift; sourceTree = "<group>"; };
+		141ADD2328C17E7000519E0E /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		1437E04028C2A8730021C4F3 /* BestOffersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestOffersController.swift; sourceTree = "<group>"; };
+		1437E04228C2DA810021C4F3 /* HelpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpController.swift; sourceTree = "<group>"; };
+		1437E04428C2DB1B0021C4F3 /* AddCouponController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCouponController.swift; sourceTree = "<group>"; };
 		143BBA262879103400E6CA35 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		143C3DEB28BFF53700167459 /* ResultsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsController.swift; sourceTree = "<group>"; };
 		143C3DEF28C03DB700167459 /* classCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = classCell.swift; sourceTree = "<group>"; };
@@ -91,7 +101,12 @@
 				149A7AE6286BE29500CFC28D /* SceneDelegate.swift */,
 				149A7AE8286BE29500CFC28D /* FirstController.swift */,
 				14E4B4B12870F13D00E5E8D5 /* RegisterController.swift */,
+				141ADD2328C17E7000519E0E /* ProfileController.swift */,
 				149A7AEA286BE29500CFC28D /* Main.storyboard */,
+				14072FF528C18C4500B847F1 /* ChangePasswordController.swift */,
+				1437E04028C2A8730021C4F3 /* BestOffersController.swift */,
+				1437E04228C2DA810021C4F3 /* HelpController.swift */,
+				1437E04428C2DB1B0021C4F3 /* AddCouponController.swift */,
 				143C3DEB28BFF53700167459 /* ResultsController.swift */,
 				14687BEF28BB17B300D2EA8C /* sideMenuController.swift */,
 				1457FD28289C508A000C4903 /* TableViewCell.swift */,
@@ -242,15 +257,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1437E04128C2A8730021C4F3 /* BestOffersController.swift in Sources */,
 				14E4B4B22870F13D00E5E8D5 /* RegisterController.swift in Sources */,
 				14E4B4B42870F15F00E5E8D5 /* LoginController.swift in Sources */,
 				143C3DF028C03DB700167459 /* classCell.swift in Sources */,
 				14687BF028BB17B300D2EA8C /* sideMenuController.swift in Sources */,
 				14AB2E47288E116F0067F876 /* CollectionViewCell.swift in Sources */,
+				1437E04328C2DA810021C4F3 /* HelpController.swift in Sources */,
 				149A7AE9286BE29500CFC28D /* FirstController.swift in Sources */,
 				149A7AE5286BE29500CFC28D /* AppDelegate.swift in Sources */,
+				141ADD2428C17E7000519E0E /* ProfileController.swift in Sources */,
+				14072FF628C18C4500B847F1 /* ChangePasswordController.swift in Sources */,
 				14687BF228BB24F100D2EA8C /* settingCell.swift in Sources */,
 				1457FD29289C508A000C4903 /* TableViewCell.swift in Sources */,
+				1437E04528C2DB1B0021C4F3 /* AddCouponController.swift in Sources */,
 				143BBA272879103400E6CA35 /* HomeController.swift in Sources */,
 				143C3DF228C0407900167459 /* orderCell.swift in Sources */,
 				149A7AE7286BE29500CFC28D /* SceneDelegate.swift in Sources */,
