@@ -31,6 +31,11 @@
 		14E4B4B22870F13D00E5E8D5 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E4B4B12870F13D00E5E8D5 /* RegisterController.swift */; };
 		14E4B4B42870F15F00E5E8D5 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E4B4B32870F15F00E5E8D5 /* LoginController.swift */; };
 		59FD1DBF88C80EE1798DEE4C /* Pods_Qasimah.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14424BCC82601F09D9935296 /* Pods_Qasimah.framework */; };
+		BF5BC0B729046E7A00572898 /* RecoverPassController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5BC0B629046E7A00572898 /* RecoverPassController.swift */; };
+		BF5BC0B929046ED300572898 /* CheckCodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5BC0B829046ED300572898 /* CheckCodeController.swift */; };
+		BFB8308329003B1E0013D536 /* UsedCouponsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB8308229003B1E0013D536 /* UsedCouponsController.swift */; };
+		BFF6D61F290148680027FABE /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF6D61E290148680027FABE /* NotificationController.swift */; };
+		BFFC374528F746880005CAE7 /* favouriteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFC374428F746880005CAE7 /* favouriteController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +66,11 @@
 		14E4B4B12870F13D00E5E8D5 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		14E4B4B32870F15F00E5E8D5 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		8C94638EE78F0A0AC78CB48E /* Pods-Qasimah.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qasimah.debug.xcconfig"; path = "Target Support Files/Pods-Qasimah/Pods-Qasimah.debug.xcconfig"; sourceTree = "<group>"; };
+		BF5BC0B629046E7A00572898 /* RecoverPassController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoverPassController.swift; sourceTree = "<group>"; };
+		BF5BC0B829046ED300572898 /* CheckCodeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckCodeController.swift; sourceTree = "<group>"; };
+		BFB8308229003B1E0013D536 /* UsedCouponsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsedCouponsController.swift; sourceTree = "<group>"; };
+		BFF6D61E290148680027FABE /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = SOURCE_ROOT; };
+		BFFC374428F746880005CAE7 /* favouriteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favouriteController.swift; sourceTree = "<group>"; };
 		C92D0FB45761E211E33E97D4 /* Pods-Qasimah.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qasimah.release.xcconfig"; path = "Target Support Files/Pods-Qasimah/Pods-Qasimah.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,12 +107,17 @@
 		149A7AE3286BE29500CFC28D /* Qasimah */ = {
 			isa = PBXGroup;
 			children = (
+				BFF6D61E290148680027FABE /* NotificationController.swift */,
 				149A7AE4286BE29500CFC28D /* AppDelegate.swift */,
 				149A7AE6286BE29500CFC28D /* SceneDelegate.swift */,
 				149A7AE8286BE29500CFC28D /* FirstController.swift */,
 				14E4B4B12870F13D00E5E8D5 /* RegisterController.swift */,
 				141ADD2328C17E7000519E0E /* ProfileController.swift */,
 				149A7AEA286BE29500CFC28D /* Main.storyboard */,
+				BF5BC0B629046E7A00572898 /* RecoverPassController.swift */,
+				BF5BC0B829046ED300572898 /* CheckCodeController.swift */,
+				BFFC374428F746880005CAE7 /* favouriteController.swift */,
+				BFB8308229003B1E0013D536 /* UsedCouponsController.swift */,
 				14072FF528C18C4500B847F1 /* ChangePasswordController.swift */,
 				1437E04028C2A8730021C4F3 /* BestOffersController.swift */,
 				1437E04228C2DA810021C4F3 /* HelpController.swift */,
@@ -257,19 +272,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFB8308329003B1E0013D536 /* UsedCouponsController.swift in Sources */,
 				1437E04128C2A8730021C4F3 /* BestOffersController.swift in Sources */,
 				14E4B4B22870F13D00E5E8D5 /* RegisterController.swift in Sources */,
 				14E4B4B42870F15F00E5E8D5 /* LoginController.swift in Sources */,
 				143C3DF028C03DB700167459 /* classCell.swift in Sources */,
 				14687BF028BB17B300D2EA8C /* sideMenuController.swift in Sources */,
+				BFF6D61F290148680027FABE /* NotificationController.swift in Sources */,
 				14AB2E47288E116F0067F876 /* CollectionViewCell.swift in Sources */,
 				1437E04328C2DA810021C4F3 /* HelpController.swift in Sources */,
 				149A7AE9286BE29500CFC28D /* FirstController.swift in Sources */,
+				BF5BC0B929046ED300572898 /* CheckCodeController.swift in Sources */,
 				149A7AE5286BE29500CFC28D /* AppDelegate.swift in Sources */,
 				141ADD2428C17E7000519E0E /* ProfileController.swift in Sources */,
 				14072FF628C18C4500B847F1 /* ChangePasswordController.swift in Sources */,
 				14687BF228BB24F100D2EA8C /* settingCell.swift in Sources */,
 				1457FD29289C508A000C4903 /* TableViewCell.swift in Sources */,
+				BF5BC0B729046E7A00572898 /* RecoverPassController.swift in Sources */,
 				1437E04528C2DB1B0021C4F3 /* AddCouponController.swift in Sources */,
 				143BBA272879103400E6CA35 /* HomeController.swift in Sources */,
 				143C3DF228C0407900167459 /* orderCell.swift in Sources */,
@@ -277,6 +296,7 @@
 				14E4B4B02870F0CF00E5E8D5 /* LanguageController.swift in Sources */,
 				143C3DEC28BFF53700167459 /* ResultsController.swift in Sources */,
 				1470EC3B28764695003B0252 /* eyeSecureButton.swift in Sources */,
+				BFFC374528F746880005CAE7 /* favouriteController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,8 +452,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -461,8 +483,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

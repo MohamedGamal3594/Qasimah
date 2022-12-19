@@ -18,6 +18,7 @@ class HomeController: UIViewController ,UICollectionViewDelegate,UICollectionVie
     let searchButton = UIButton(type: .system)
     var catogreyNames:[String] = ["الكل","عطور","اكسسوارات","السفر","مطاعم"]
     var selectedIndex: NSInteger = -1
+    var collectionCellIndex = -1
     var favourites = [NSInteger]()
     var copiedCodes = [NSInteger]()
         
@@ -49,6 +50,7 @@ class HomeController: UIViewController ,UICollectionViewDelegate,UICollectionVie
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CollectionViewCell
+        cell.cellbutton.tag = indexPath.item
         cell.cellbutton.setTitle(catogreyNames[indexPath.row], for: .normal)
         cell.cellbutton.addTarget(self, action: #selector(selectedButton), for: .touchUpInside)
         return cell
@@ -135,16 +137,16 @@ class HomeController: UIViewController ,UICollectionViewDelegate,UICollectionVie
     }
 
     @objc func selectedButton(_ sender: UIButton){
-        for i in 0 ... catogreyNames.count - 1 {
-            let indexPath = IndexPath(item: i, section: 0)
-            let cell = catogreyCollection.cellForItem(at: indexPath) as! CollectionViewCell
-            
-            cell.cellbutton.setTitleColor(UIColor.black, for: .normal)
-            
-            cell.cellbutton.tintColor = UIColor.init(red: 237/255, green: 238/255, blue: 243/255, alpha: 1)
-        }
         sender.setTitleColor(UIColor.init(red: 255/255, green: 211/255, blue: 106/255, alpha: 1), for: .normal)
         sender.tintColor = UIColor.init(red: 47/255, green: 178/255, blue: 162/255, alpha: 1)
+        
+        if collectionCellIndex != -1{
+            let indexPath = IndexPath(item: collectionCellIndex, section: 0)
+            let cell = catogreyCollection.cellForItem(at: indexPath) as! CollectionViewCell
+            cell.cellbutton.setTitleColor(UIColor.black, for: .normal)
+            cell.cellbutton.tintColor = UIColor.init(red: 237/255, green: 238/255, blue: 243/255, alpha: 1)
+        }
+        collectionCellIndex = sender.tag
     }
     
     @objc func arrowClicked(_ sender: UIButton){

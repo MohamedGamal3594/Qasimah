@@ -51,8 +51,14 @@ class sideMenuController: UIViewController,UITableViewDelegate,UITableViewDataSo
             case 1:
                 view = storyboard?.instantiateViewController(withIdentifier: "bestView") as! BestOffersController
                 break
+            case 2:
+                view = storyboard?.instantiateViewController(withIdentifier: "favView") as! favouriteController
+            case 3:
+                view = storyboard?.instantiateViewController(withIdentifier: "notificationView") as! NotificationController
+            case 4:
+                view = storyboard?.instantiateViewController(withIdentifier: "usedCouponsView") as! UsedCouponsController
             case 6:
-            view = storyboard?.instantiateViewController(withIdentifier: "addView") as! AddCouponController
+                view = storyboard?.instantiateViewController(withIdentifier: "addView") as! AddCouponController
                 break
             case 7:
                 view = storyboard?.instantiateViewController(withIdentifier: "helpView") as! HelpController
